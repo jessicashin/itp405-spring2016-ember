@@ -1,0 +1,16 @@
+<h3>Please click on an artist to view the songs for that artist.</h3>
+<h2>Artists</h2>
+<div class="col-md-3">
+    {{#each model.artists as |artist|}}
+        <div class="artist">
+            <h4>
+                {{#link-to 'artists.artist' artist.id}}
+                    {{artist.artistName}}
+                {{/link-to}}
+            </h4>
+        </div>
+    {{/each}}
+</div>
+<div class="col-md-9">
+    {{outlet}}
+</div>

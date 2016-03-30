@@ -1,0 +1,8 @@
+<h3>Songs by {{model.artist.artistName}}</h3>
+{{#each model.songs as |song|}}
+    <div class="song">
+        <h4>
+            {{song.title}}
+        </h4>
+    </div>
+{{/each}}
